@@ -36,6 +36,7 @@ public class KafkaClientCreator
 
     properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
     properties.put(ProducerConfig.CLIENT_ID_CONFIG, PRODUCER_CLIENT_ID);
+    properties.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
 
     return properties;
   }
